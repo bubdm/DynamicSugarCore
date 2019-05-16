@@ -14,7 +14,7 @@ in C# 4.0.
 since C# support string interpolation.
 - The class MultiValues was an attempt to create functions returning multiple values, which is now supported by C#.
 
-### [Examples](http://frederictorres.blogspot.com/2014/03/dynamicsugarnet.html)
+A lot of the features are still usefull see `[Examples](http://frederictorres.blogspot.com/2014/03/dynamicsugarnet.html)`
 
 # Videos
 * [DynamicSugar.Demo](https://www.youtube.com/watch?v=aUDxnU4VY2s&feature=youtu.be)
@@ -25,7 +25,10 @@ since C# support string interpolation.
 You may use DynamicSugar.Net under the terms of the MIT License.
   
 # NuGet
-Install-Package DynamicSugar
+* TODO: Create NuGet Package and publish
+```powershell
+Install-Package DynamicSugarCore
+```
 
 # Blog Posts:
 How to Write a Spelling Corrector? From Python to C# with Dynamic Sugar 
