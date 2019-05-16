@@ -30,12 +30,6 @@ You may use DynamicSugar.Net under the terms of the MIT License.
 Install-Package DynamicSugarCore
 ```
 
-# Blog Posts:
-How to Write a Spelling Corrector? From Python to C# with Dynamic Sugar 
-  
-# Screen Casts: 
-* The Format() Method
-* Dynamic Sugar Demo
 
 # Platforms: 
 * Microsoft Windows and Windows Phone, .NET v 4.x - 2011 - [Source](https://github.com/fredericaltorres/DynamicSugarNet)
