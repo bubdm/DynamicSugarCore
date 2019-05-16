@@ -6,13 +6,13 @@ The Dynamic Sugar Library provides methods and classes inspired by the dynamic
 languages Python and JavaScript to write shorter and more readable source code 
 in C# 4.0.
 
-The library was created in 2011.
-
-In 2019 I ported the library to DotNetCore.
+* The library was created in 2011.
+* In 2019 I ported the library to DotNetCore.
 
 ***Outdated***
-- The extension methods string.Format() and and string.Template() are now outdate,
+- The extension methods string.Format() and and string.Template() are now out dated,
 since C# support string interpolation.
+- The class MultiValues was an attempt to create functions returning multiple values, which is now supported by C#.
 
 ### [Examples](http://frederictorres.blogspot.com/2014/03/dynamicsugarnet.html)
 
