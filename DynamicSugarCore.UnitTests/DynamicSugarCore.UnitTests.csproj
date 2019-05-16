@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DataClasses\Alphabet.txt" />
+    <None Remove="DataClasses\Alphabet2.txt" />
+    <None Remove="DataClasses\Alphabet3.txt" />
+    <None Remove="EmbedResource\EmbedBitmap.bmp" />
+    <None Remove="Files\%25.txt" />
+    <None Remove="Files\%25.txt.gzip" />
+    <None Remove="Files\24k.txt" />
+    <None Remove="Files\ac.txt.gzip" />
+    <None Remove="Files\DS_Compression.txt.gzip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DataClasses\Alphabet.txt" />
+    <EmbeddedResource Include="DataClasses\Alphabet2.txt" />
+    <EmbeddedResource Include="DataClasses\Alphabet3.txt" />
+    <EmbeddedResource Include="EmbedResource\EmbedBitmap.bmp" />
+    <EmbeddedResource Include="Files\%.txt" />
+    <EmbeddedResource Include="Files\%.txt.gzip" />
+    <EmbeddedResource Include="Files\24k.txt" />
+    <EmbeddedResource Include="Files\ac.txt.gzip" />
+    <EmbeddedResource Include="Files\DS_Compression.txt.gzip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.4.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DynamicSugar.Lib\DynamicSugarCore.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(TargetFramework)', '^netcoreapp\d'))">
+    <DefineConstants>DOTNETCORE</DefineConstants>
+  </PropertyGroup>
+
+</Project>
